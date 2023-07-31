@@ -1,0 +1,15 @@
+            Random rand = new Random();
+            int number;
+            number = rand.Next(1, 100);
+            int degree = 1;
+            int two = 2;
+
+            while (number > two)
+            {
+                two *= 2;
+                degree++;
+            }
+            Console.WriteLine("Рандомное число " + number);
+            Console.WriteLine("2 в степени " + degree);
+            Console.WriteLine(number + "<" + two);
+            Console.ReadKey();
